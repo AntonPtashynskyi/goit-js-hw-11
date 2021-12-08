@@ -1,0 +1,26 @@
+{
+  "name": "goit-js-hw-11",
+  "version": "1.0.0",
+  "description": "home work js-11",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonPtashynskyi/goit-js-hw-11.git"
+  },
+  "author": "Anton a.ptashynskyi@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonPtashynskyi/goit-js-hw-11/issues"
+  },
+  "homepage": "https://github.com/AntonPtashynskyi/goit-js-hw-11#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "infinite-scroll": "^4.0.1",
+    "notiflix": "^3.2.2",
+    "parcel": "^2.0.1",
+    "simplelightbox": "^2.10.1"
+  }
+}
