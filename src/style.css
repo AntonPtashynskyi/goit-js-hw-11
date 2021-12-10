@@ -16,6 +16,8 @@ button {
   background-color: rgb(102, 163, 243);
   transition: background-color 0.5s ease;
 
+  cursor: pointer;
+
   color: white;
   padding: 10px 5px;
 }
