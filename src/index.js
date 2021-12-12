@@ -11,11 +11,11 @@ const loadMoreBtn = document.querySelector('.load-more');
 
 form.addEventListener('submit', handleSubmitInput);
 loadMoreBtn.addEventListener('click', handleMoreLoadBtn);
-galleryContainer.addEventListener('click', handleImageClick);
 
 function handleSubmitInput(evt) {
   evt.preventDefault();
   galleryContainer.innerHTML = '';
+  loadMoreBtn.classList.add('is-hidden');
   services.resetPage();
   services.resetSearchValue();
 
@@ -32,6 +32,7 @@ function handleSubmitInput(evt) {
       Notify.success(`Hooray! We found ${response.totalHits} images.`);
 
       renderGallery(response);
+      loadMoreBtn.classList.remove('is-hidden');
     });
   } catch (error) {
     console.log(error);
@@ -71,19 +72,19 @@ function renderGallery(photos) {
               <img src="${webformatURL}" alt="${tags}" loading="lazy" />
               <div class="info">
                 <p class="info-item">
-                  <b>Likes</b>
+                  <b>&#128151</b>
                   ${likes}
                 </p>
                 <p class="info-item">
-                  <b>Views</b>
+                  <b>👁️‍🗨️</b>
                   ${views}
                 </p>
                 <p class="info-item">
-                  <b>Comments</b>
+                  <b>&#128172</b>
                   ${comments}
                 </p>
                 <p class="info-item">
-                  <b>Downloads</b>
+                  <b>💾</b>
                   ${downloads}
                 </p>
               </div>

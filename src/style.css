@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: rgba(11, 78, 95, 0.897);
+}
 
 input {
   outline: none;
@@ -12,6 +16,7 @@ input {
 }
 
 button {
+  display: block;
   border: none;
   background-color: rgb(102, 163, 243);
   transition: background-color 0.5s ease;
@@ -27,6 +32,18 @@ button:focus {
   background-color: rgb(54, 139, 250);
   transition: background-color 0.5s ease;
   color: white;
+}
+
+.load-more {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.load-more.is-hidden {
+  opacity: 0;
+  position: none;
+  visibility: hidden;
 }
 
 .search-form {
@@ -70,6 +87,5 @@ button:focus {
 .info {
   max-width: 300px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
