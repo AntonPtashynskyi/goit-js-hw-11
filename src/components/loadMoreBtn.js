@@ -1,11 +1,11 @@
-export default class LoadMoreBtn {
-  constructor({selector, hidden = false}) {
+// export default class LoadMoreBtn {
+//   constructor({selector, hidden = false}) {
 
-  }
+//   }
 
-  getRefs() {
-    const refs = {};
-    refs.button = document.querySelector(selector);
-    refs.
-  }
-}
+//   getRefs() {
+//     const refs = {};
+//     refs.button = document.querySelector(selector);
+//     refs.
+//   }
+// }
